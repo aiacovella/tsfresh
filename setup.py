@@ -25,7 +25,6 @@ sphinx = ["sphinx", "sphinx_rtd_theme"] if needs_sphinx else []
 
 setup(
     version=version.__version__,
-    use_scm_version=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
     setup_requires=["setuptools_scm"] + sphinx,
