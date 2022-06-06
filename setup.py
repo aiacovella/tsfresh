@@ -22,7 +22,7 @@ needs_sphinx = {"build_sphinx", "upload_docs"}.intersection(sys.argv)
 sphinx = ["sphinx", "sphinx_rtd_theme"] if needs_sphinx else []
 
 setup(
-    version="1.0.0",
+    version=version.__version__,
     use_scm_version=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
