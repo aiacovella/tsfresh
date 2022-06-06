@@ -24,6 +24,7 @@ needs_sphinx = {"build_sphinx", "upload_docs"}.intersection(sys.argv)
 sphinx = ["sphinx", "sphinx_rtd_theme"] if needs_sphinx else []
 
 setup(
+    name="peritus-tsfresh",
     version=version.__version__,
     long_description=long_description,
     long_description_content_type="text/markdown",
